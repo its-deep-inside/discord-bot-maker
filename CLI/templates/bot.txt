@@ -1,0 +1,14 @@
+# Whole of this code is generated with BotMaker made by "DEEP [for now]"
+# If you wanna controbute to this tool:
+# this is git link : <link>
+
+import discord
+from discord.ext import commands
+
+bot = commands.Bot(command_prefix = "{{ prefix }}")
+
+{% for code in output %}
+{{ code }}
+{% endfor %}
+
+bot.run("{{ token }}")

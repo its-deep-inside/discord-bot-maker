@@ -1,0 +1,6 @@
+@bot.command()
+async def {{ cmd_name }}(ctx):
+    embed = discord.Embed(title = f"{{ title }}", description = f"{{ reply }}", color = "{{ color }}")
+    embed.set_footer(icon_url =ctx.author.avatar_url, text= f"{{ footer }}")
+    
+    await ctx.send(embed=embed)
