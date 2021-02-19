@@ -93,7 +93,7 @@ class CodeGenerator():
 
         # The Channel Variable
         if "[channel]" in word:
-            word = word.replace("[channel]", "{ctx.channel}")
+            word = word.replace("[channel]", "{ctx.channel.mention}")
         if "[channel.name]" in word:
             word = word.replace("[channel.name]", "{ctx.channel.name}")
         if "[channel.id]" in word:
