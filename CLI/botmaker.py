@@ -143,7 +143,7 @@ if __name__ == '__main__':
     if args.delete_command != None and args.delete_command.strip() != "":
         path = f"{get_data_where(args.p)[1]}\database.db"
         db = Database(path)
-        db.delete_commands(args.delc)
+        db.delete_commands(args.delete_command)
         print("Command Deleted")
 
     # Get all projects
